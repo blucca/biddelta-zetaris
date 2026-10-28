@@ -13,3 +13,7 @@ Zetaris was amazing because one live SQL result brought tender clauses, current 
 - [Code, executed SQL and genuine run receipts](https://github.com/blucca/biddelta-zetaris)
 
 The video includes 49.7 seconds of original building commentary. Tender notices are historical public records; the supplier workspace and colleague edit are explicitly illustrative.
+
+## SpaceXSI coding-agent contribution
+
+Grok Build implemented the post-apply replay and zero-write refresh checks in `check.py`. Both checks preserve the entire source, including notes and snapshot metadata; the final addition passed an independent offline run. [Contribution and result](evidence/grok-build-regression.json). The recorded Zetaris workflow, production code and fixtures remain unchanged.

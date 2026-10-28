@@ -53,7 +53,13 @@ Python standard library only:
 python3 -B check.py
 ```
 
-This is an offline fixture check for both native response formats, planned-creation empty hashes, token expiry, zero-write stale rejection and unchanged T2/T6 bodies. The files above separately record the real platform run.
+This is an offline fixture check for both native response formats, planned-creation empty hashes, token expiry, zero-write stale rejection, post-apply replay/refresh idempotency and unchanged T2/T6 bodies. The files above separately record the real platform run.
+
+## Coding-agent contribution
+
+**Grok Build** implemented the six-line post-apply regression addition in `check.py`. It checks that replaying the old batch stops with zero writes, and refreshing an already-aligned native-shaped snapshot makes zero changes while preserving the entire source, including notes and snapshot metadata. The addition passed an independent offline run; [contribution and verification](evidence/grok-build-regression.json).
+
+The film records the production Zetaris workflow; this later addition extends its offline correctness checks. Production code and fixtures are unchanged.
 
 ## Run with a Zetaris instance
 

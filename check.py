@@ -49,5 +49,11 @@ assert sum(t['task_id'] == 'T5' and t['task_exists'] for t in applied_data['rows
 for task in applied_data['rows']:
     assert task_hash(task) == (task['task_sha256'] or '')
 assert plan_from_native(response_for(applied_data))['planned_writes'] == 0
+copied = copy.deepcopy(applied_data)
+stale_data, stale = apply_plan(applied_data, fresh_plan)
+assert stale['result'] == 'stopped' and stale['writes'] == 0 and applied_data == copied and stale_data == copied
+refreshed = plan_from_native(response_for(applied_data))
+idle_data, idle = apply_plan(applied_data, refreshed)
+assert idle['writes'] == 0 and idle['already_aligned'] == 5 and applied_data == copied and idle_data == copied
 print(json.dumps({'offline_contract': 'PASS', 'stale_writes': 0, 'fresh_writes': 4,
                   'aligned': 1, 'T2_body_retained': True, 'T6_body_retained': True, 'duplicate_request': False}))

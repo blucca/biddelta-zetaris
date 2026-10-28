@@ -1,0 +1,24 @@
+{
+  "tool": "Grok Build",
+  "cli_version": "1.0.70",
+  "contribution": "Added six top-level offline regression lines in check.py; production code and fixtures unchanged.",
+  "checks": [
+    "Replaying the previously fresh batch against the applied snapshot stops with zero writes and preserves the whole source.",
+    "Refreshing and applying the already-aligned snapshot writes zero, reports five already-aligned tasks, and preserves notes, metadata and retained T6."
+  ],
+  "independent_verification": {
+    "at": "2026-10-29T00:15:29.631502+08:00",
+    "command": "python -B check.py",
+    "exit_code": 0,
+    "stdout": {
+      "offline_contract": "PASS",
+      "stale_writes": 0,
+      "fresh_writes": 4,
+      "aligned": 1,
+      "T2_body_retained": true,
+      "T6_body_retained": true,
+      "duplicate_request": false
+    }
+  },
+  "video": "The recorded native workflow is unchanged; this contribution extends its offline regression contract."
+}
