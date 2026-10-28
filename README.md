@@ -5,6 +5,8 @@ An official tender correction is joined to supplier tasks and a document registe
 
 **Recorded result: 5 affected tasks · 0 stale writes · 4 fresh writes · 1 already aligned.**
 
+**[Watch the genuine 2:39 replay](https://blucca.github.io/biddelta-zetaris/)** — recorded native queries, simulated colleague edit, stale rejection, refresh/application and 49.7 seconds of original building commentary.
+
 ## The case
 
 South Norfolk Council's historical CRM procurement, reference `2547-PPT-R`:

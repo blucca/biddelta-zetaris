@@ -21,3 +21,9 @@ Principles: evidence is the visual anchor, document collection is one shared dep
 
 ## Brief review
 A uniform KPI-card layout would conceal the chain from clause to task. Replaced it with an evidence/task split and one deadline banner. Boldness is concentrated in the large old/new deadline; source facts, missing files and retained work have quiet row-based treatments. Historical public notice facts and illustrative supplier records are labeled once at the tender header and at source references.
+
+## Public film & watch page
+
+Audience: a supplier bid manager and the Demo Challenge's reviewing judges. Lead with the real deadline correction, then the recorded stale-stop/fresh-apply result. Reuse the bench's institutional blue `#143D96`, navy `#17304F`, white `#FFFFFF`, document pale blue `#EDF2FB`, and retained-work green `#24654F`; IBM Plex Sans for interface/body and Plex Serif for the tender headline. A single large film sits below a short two-date headline, followed by the chronological replay and direct source/receipt links. Left-aligned, no dashboard metrics or extra feature sections. The film's blue document frame gives the genuine workbench most of the image; scene-specific callouts identify the action, and captions have a dedicated strip below the controls. The source/workspace/narrator distinctions remain visible in the page and credits. Review: this visual hierarchy follows a dated procurement decision and its actual evidence, and matches the existing bench.
+
+Film implementation: the recorded bench and watch page retain Plex. Frame titles and captions reuse the supplied getting-started site's Plus Jakarta Sans TrueType file, keeping the encode independent of WOFF2 conversion dependencies.
