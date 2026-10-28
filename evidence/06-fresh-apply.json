@@ -1,0 +1,150 @@
+{
+  "status": 200,
+  "result": {
+    "receipt": {
+      "result": "applied",
+      "writes": 4,
+      "write_receipts": [
+        {
+          "task_id": "T1",
+          "task_version": 2,
+          "label": "Update submission deadline"
+        },
+        {
+          "task_id": "T3",
+          "task_version": 2,
+          "label": "Reopen technical review"
+        },
+        {
+          "task_id": "T4",
+          "task_version": 2,
+          "label": "Pause final sign-off"
+        },
+        {
+          "task_id": "T5",
+          "task_version": 1,
+          "label": "Create one document request"
+        }
+      ],
+      "affected_tasks": 5,
+      "already_aligned": 1,
+      "retained_task": "T6",
+      "retained_documents": [
+        "D2",
+        "D3",
+        "D4",
+        "D5",
+        "D6"
+      ],
+      "message": "Recorded turnover evidence, three case studies and completed architecture retained.",
+      "utc": "2026-10-28T08:40:42.527899+00:00",
+      "plan_id": "a3d8b07e-9ffb-4c83-9189-b5cf7ac877e6"
+    },
+    "source": {
+      "rows": [
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S2-biddelta-applied",
+          "snapshot_version": 3,
+          "provenance_class": "illustrative",
+          "task_id": "T1",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 2,
+          "title": "Submit SQ / request to participate",
+          "status": "ready",
+          "due_at": "2024-12-09T16:00:00Z",
+          "notes": "Illustrative submission task for the SQ / request-to-participate stage.",
+          "prior_approval_notice_id": null,
+          "task_sha256": "d474fb04a6054b367ccc3acdbcf7d06cd7bfa41a69be90234519921113563689"
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S2-biddelta-applied",
+          "snapshot_version": 3,
+          "provenance_class": "illustrative",
+          "task_id": "T2",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 2,
+          "title": "Financial qualification review",
+          "status": "review_required",
+          "due_at": null,
+          "notes": "Illustrative sign-off: turnover threshold reviewed against notice 035490-2024. Finance review reopened; awaiting the applicable SQ guidance.",
+          "prior_approval_notice_id": "035490-2024",
+          "task_sha256": "142fef9503805ada8d5a6befde30262302dbc5bca008a0f948dd2ea3767206cf"
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S2-biddelta-applied",
+          "snapshot_version": 3,
+          "provenance_class": "illustrative",
+          "task_id": "T3",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 2,
+          "title": "Professional and technical response",
+          "status": "review_required",
+          "due_at": null,
+          "notes": "Illustrative sign-off: three relevant technical examples reviewed. Review the additional capability questions in applicable SQ guidance. Retain three case studies.",
+          "prior_approval_notice_id": "035490-2024",
+          "task_sha256": "bef6cc8246eb3bca704685b9a07673dc73a46955138317a40ac7aa6ea93b3031"
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S2-biddelta-applied",
+          "snapshot_version": 3,
+          "provenance_class": "illustrative",
+          "task_id": "T4",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 2,
+          "title": "Final SQ sign-off",
+          "status": "paused",
+          "due_at": null,
+          "notes": "Illustrative final sign-off against notice 035490-2024. Resume final sign-off after applicable files are recorded and financial and technical reviews pass.",
+          "prior_approval_notice_id": "035490-2024",
+          "task_sha256": "e801f22e1dcb8ccba389cb4d774ec0f682a20ebac51c85ae535336363a6b3ea5"
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S2-biddelta-applied",
+          "snapshot_version": 3,
+          "provenance_class": "illustrative",
+          "task_id": "T5",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 1,
+          "title": "Obtain applicable SQ and guidance",
+          "status": "open",
+          "due_at": null,
+          "notes": "Obtain the applicable SQ and accompanying guidance; record document versions on receipt.",
+          "prior_approval_notice_id": null,
+          "task_sha256": "36ac67af3451cfada34de9cdf78f791ea131bc83ca2961ddbe0497b7e0551dc9"
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S2-biddelta-applied",
+          "snapshot_version": 3,
+          "provenance_class": "illustrative",
+          "task_id": "T6",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 1,
+          "title": "Platform architecture diagram",
+          "status": "done",
+          "due_at": null,
+          "notes": "Illustrative completed diagram; scope dependency II.2.4.",
+          "prior_approval_notice_id": null,
+          "task_sha256": "fd954562881fe5a80369b89ccbcb2666b178df462da92397890bd087b9bbcc24"
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#143D96">
+  <title>BidDelta | Amendment review bench</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="brandbar">
+    <a href="/" class="brand" aria-label="BidDelta home"><span class="brand-icon" aria-hidden="true">B<span>∆</span></span><span>BidDelta<small>Amendment review bench</small></span></a>
+    <div class="connection"><span id="connection-dot"></span><span id="connection-label">Source query ready</span><button class="bar-button" id="trace-button">Inspect native SQL</button></div>
+  </header>
+  <main>
+    <div class="contextline"><span>Historical public tender / illustrative supplier workspace</span><button id="reset-button" class="text-button">Reset sample</button></div>
+    <section class="tender" aria-labelledby="tender-title">
+      <div><span class="council">South Norfolk Council</span><h1 id="tender-title">Customer Relation Management<br class="desktop-break"> Software Package</h1><p>Reference 2547-PPT-R <span class="context-detail">Correction published 8 November 2024</span></p></div>
+      <div class="deadline"><p>SQ submission deadline</p><div class="deadline-move"><div class="old-date"><strong>2 Dec</strong><span>12:00 GMT</span></div><span class="date-arrow" aria-hidden="true">⟶</span><div class="new-date"><strong>9 Dec</strong><span>16:00 GMT</span></div></div><small>2024 historical replay</small></div>
+    </section>
+    <ol class="workflow" aria-label="Replay progress">
+      <li class="active" data-step="query"><span>1</span>Query three sources</li>
+      <li data-step="edit"><span>2</span>Teammate edit</li>
+      <li data-step="check"><span>3</span>Check versions</li>
+      <li data-step="refresh"><span>4</span>Refresh & apply</li>
+    </ol>
+    <div id="event-banner" class="event-banner" role="status" aria-live="polite" hidden></div>
+    <div class="bench">
+      <section class="evidence-pane" aria-labelledby="evidence-title">
+        <div class="pane-heading"><div><h2 id="evidence-title">What changed</h2><p>Official correction 036312-2024</p></div><a href="https://www.find-tender.service.gov.uk/Notice/036312-2024" target="_blank" rel="noreferrer">Open notice</a></div>
+        <div class="clause-tabs" role="group" aria-label="Select amendment clause"><button data-change="C1" class="selected">Deadline<span>IV.2.2</span></button><button data-change="C2">Financial<span>III.1.2</span></button><button data-change="C3">Technical<span>III.1.3</span></button></div>
+        <div id="evidence-content" class="evidence-content"><div class="evidence-placeholder"><span class="query-glyph" aria-hidden="true">⌁</span><h3>Start with the source evidence.</h3><p>One native Zetaris query links the public amendment, supplier tasks and document register. Your plan carries the exact task versions returned.</p><div class="source-stack"><div><span class="source-mark public">N</span><div><strong>Find a Tender notices</strong><small>Public notice & correction / REST</small></div></div><div><span class="source-mark task">T</span><div><strong>Supplier workspace</strong><small>Illustrative tasks & dependencies / REST</small></div></div><div><span class="source-mark document">D</span><div><strong>Document register</strong><small>Illustrative documents / PostgreSQL JDBC</small></div></div></div></div></div>
+        <div class="missing-document"><span class="document-outline" aria-hidden="true">▤</span><div><strong>One shared collection dependency</strong><p>Applicable SQ & accompanying guidance</p><small>D1 is awaiting the file. Financial and technical reviews remain open until the requirements are reviewed.</small></div><span class="document-status">Awaiting file</span></div>
+      </section>
+      <section class="task-pane" aria-labelledby="task-title">
+        <div class="pane-heading"><div><h2 id="task-title">Protect signed-off work</h2><p id="task-summary">Query to prepare the five-task impact plan</p></div><span id="snapshot-badge" class="snapshot-badge">Source snapshot 2</span></div>
+        <div class="task-column-head"><span>Affected task & proposed action</span><span>Source state</span></div>
+        <div id="tasks" class="tasks"></div>
+        <div class="retained-row"><span class="retention-mark" aria-hidden="true">✓</span><div><strong>T6 · Platform architecture diagram</strong><p>Completed scope work retained. Turnover evidence and three case studies stay recorded.</p></div><span>Retained</span></div>
+        <div class="query-receipt" id="query-receipt"><span class="receipt-icon" aria-hidden="true">⌘</span><p>Every evidence refresh executes on the real Zetaris platform.<small>The task write-back uses a complete-batch version check.</small></p></div>
+      </section>
+    </div>
+    <section id="apply-receipt" class="apply-receipt" aria-label="Application receipt" hidden></section>
+    <footer class="actionbar"><div><strong id="next-action-title">A changed tender needs a fresh plan.</strong><p id="next-action-detail">Read the three sources before changing approved work.</p></div><div class="action-buttons"><button id="edit-button" class="secondary" hidden>Add teammate edit (sample)</button><button id="primary-button" class="primary">Query sources in Zetaris</button></div></footer>
+    <div class="footer-note"><span>BidDelta by Blucca, an autonomous AI engineering practice.</span><span>Public notice content: Open Government Licence v3.0.</span></div>
+  </main>
+  <dialog id="trace-dialog"><div class="dialog-heading"><div><h2>Native query & provenance</h2><p>REST notices + REST task dependencies + PostgreSQL documents</p></div><button id="trace-close" aria-label="Close trace">×</button></div><div class="trace-tabs"><button class="selected" data-trace="sql">Executed SQL</button><button data-trace="response">Native response</button><button data-trace="sources">Data sources</button></div><pre id="trace-content"></pre></dialog>
+</body>
+</html>

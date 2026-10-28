@@ -1,0 +1,133 @@
+{
+  "status": 409,
+  "result": {
+    "receipt": {
+      "result": "stopped",
+      "writes": 0,
+      "conflicts": [
+        {
+          "kind": "snapshot",
+          "expected_version": 1,
+          "current_versions": [
+            2
+          ]
+        },
+        {
+          "kind": "task",
+          "task_id": "T2",
+          "expected_version": 1,
+          "current_version": 2
+        }
+      ],
+      "message": "A teammate changed the source. Refresh evidence before applying this batch.",
+      "utc": "2026-10-28T08:40:40.581193+00:00",
+      "plan_id": "1b1058d8-60bd-45d7-8ab2-88ba1ecb9ea2"
+    },
+    "source": {
+      "rows": [
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S1-user-edit",
+          "snapshot_version": 2,
+          "provenance_class": "illustrative",
+          "task_id": "T1",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 1,
+          "title": "Submit SQ / request to participate",
+          "status": "ready",
+          "due_at": "2024-12-02T12:00:00Z",
+          "notes": "Illustrative submission task for the SQ / request-to-participate stage.",
+          "prior_approval_notice_id": null,
+          "task_sha256": "331bb68f442684076faaf938f63cb2136e00e87ceb053dbfd113065c09567682"
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S1-user-edit",
+          "snapshot_version": 2,
+          "provenance_class": "illustrative",
+          "task_id": "T2",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 2,
+          "title": "Financial qualification review",
+          "status": "review_required",
+          "due_at": null,
+          "notes": "Illustrative sign-off: turnover threshold reviewed against notice 035490-2024. Finance review reopened; awaiting the applicable SQ guidance.",
+          "prior_approval_notice_id": "035490-2024",
+          "task_sha256": "142fef9503805ada8d5a6befde30262302dbc5bca008a0f948dd2ea3767206cf"
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S1-user-edit",
+          "snapshot_version": 2,
+          "provenance_class": "illustrative",
+          "task_id": "T3",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 1,
+          "title": "Professional and technical response",
+          "status": "approved",
+          "due_at": null,
+          "notes": "Illustrative sign-off: three relevant technical examples reviewed.",
+          "prior_approval_notice_id": "035490-2024",
+          "task_sha256": "e68f2e55f434212d4377a134ba74ebaaf4149d7c4ceb0aad39db1acd4e06b4b0"
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S1-user-edit",
+          "snapshot_version": 2,
+          "provenance_class": "illustrative",
+          "task_id": "T4",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 1,
+          "title": "Final SQ sign-off",
+          "status": "approved",
+          "due_at": null,
+          "notes": "Illustrative final sign-off against notice 035490-2024.",
+          "prior_approval_notice_id": "035490-2024",
+          "task_sha256": "8b424da030e03d4adf4936b1d642f8bb632856c18a9fb9ad3afbe51607da2d01"
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S1-user-edit",
+          "snapshot_version": 2,
+          "provenance_class": "illustrative",
+          "task_id": "T5",
+          "row_kind": "planned_creation",
+          "task_exists": 0,
+          "task_version": 0,
+          "title": "Obtain applicable SQ and guidance",
+          "status": null,
+          "due_at": null,
+          "notes": null,
+          "prior_approval_notice_id": null,
+          "task_sha256": null
+        },
+        {
+          "ocid": "ocds-h6vhtk-0470d3",
+          "as_of": "2024-11-08T15:56:37Z",
+          "snapshot_id": "S1-user-edit",
+          "snapshot_version": 2,
+          "provenance_class": "illustrative",
+          "task_id": "T6",
+          "row_kind": "existing_task",
+          "task_exists": 1,
+          "task_version": 1,
+          "title": "Platform architecture diagram",
+          "status": "done",
+          "due_at": null,
+          "notes": "Illustrative completed diagram; scope dependency II.2.4.",
+          "prior_approval_notice_id": null,
+          "task_sha256": "fd954562881fe5a80369b89ccbcb2666b178df462da92397890bd087b9bbcc24"
+        }
+      ]
+    }
+  }
+}

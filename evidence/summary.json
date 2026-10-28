@@ -1,0 +1,14 @@
+{
+  "native_end_to_end": "PASS",
+  "three_live_queries": true,
+  "native_rows": 11,
+  "evidence_task_pairs": 7,
+  "affected_tasks": 5,
+  "old_writes": 0,
+  "fresh_writes": 4,
+  "already_aligned": 1,
+  "T2_full_body_retained": true,
+  "T6_full_body_retained": true,
+  "final_native_snapshot": 3,
+  "final_native_remaining_writes": 0
+}
